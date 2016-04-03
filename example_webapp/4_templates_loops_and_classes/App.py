@@ -19,6 +19,10 @@ def create_dummy_users():
     bucket_1 = Bucket(author_1, "Bucket created by {0}".format(author_1.get_name()))
     bucket_2 = Bucket(author_2, "Bucket created by {0}".format(author_2.get_name()))
 
+    buckets.append(bucket_1)
+    buckets.append(bucket_2)
+
+    return buckets
 
 # The route in URL to listen on.
 @app.route("/")
