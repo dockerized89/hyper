@@ -1,12 +1,12 @@
 {
-    "key1": "data1",
+    "key1": "value1",
+    "key3": {
+        "subkey1": "subvalue1",
+        "subkey2": "subvalue2"
+    },
     "key2": [
         1,
         2,
         3
-    ],
-    "key3": {
-        "subkey2": "subvalue2",
-        "subkey1": "subvalue1"
-    }
+    ]
 }

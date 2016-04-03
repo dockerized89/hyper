@@ -27,6 +27,7 @@ def main():
 
     p3 = p1 + p2
 
+    print(Point.count)
     del p1
     del p2
 

@@ -1,5 +1,6 @@
 import os
 import sys
+
 sys.path.append(os.getcwd())
 
 from flask import Flask, render_template
@@ -9,7 +10,8 @@ from classes import Author
 # app variable containing a Flask object
 app = Flask(__name__)
 
-def create_dummy_users():
+
+def create_dummy_buckets():
     buckets = []
     # Buckets wants Authors, lets create them first
     author_1 = Author("Anna")
@@ -24,15 +26,17 @@ def create_dummy_users():
 
     return buckets
 
+
 # The route in URL to listen on.
 @app.route("/")
 @app.route("/index")
 def index():
-    buckets = create_dummy_users()
+    buckets = create_dummy_buckets()
 
     return render_template("index.html",
                            title="My fancy title",
                            page="home", buckets=buckets)
+
 
 # Main method that is that one that is actually executed
 if __name__ == "__main__":

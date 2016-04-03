@@ -93,9 +93,9 @@ def worker():
 
 def main():
     start = time.time()
-    word_counter3()
+    word_counter1()
 
-    finished = (time.time() - start)
+    #finished = (time.time() - start)
 
 
 if __name__ == '__main__':

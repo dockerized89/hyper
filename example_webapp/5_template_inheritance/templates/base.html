@@ -4,9 +4,9 @@
 <head>
     <!-- Check if title is populated -->
     {% if title %}
-    <title>{{ title }} - Bucket lists</title>
+        <title>{{ title }} - Bucket lists</title>
     {% else %}
-    <title>Bucket lists</title>
+        <title>Bucket lists</title>
     {% endif %}
 
 
@@ -16,23 +16,27 @@
 
 </head>
 
-  <body>
-    <div class="container">
-        <div class="header">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    <li role="presentation" class="active"><a href="#">Home</a>
-                    </li>
-                    <li role="presentation"><a href="#">Sign In</a>
-                    </li>
-                    <li role="presentation"><a href="showSignUp">Sign Up</a>
-                    </li>
-                </ul>
-            </nav>
-            <h3 class="text-muted">Python example app - {{ page }}</h3>
-        </div>
+<body>
+<div class="container">
+    <div class="header">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Home</a>
+                </li>
+                <li role="presentation"><a href="#">Sign In</a>
+                </li>
+                <li role="presentation"><a href="showSignUp">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Python example app - {{ page }}</h3>
+    </div>
 
-            <!-- content block referenced in index.html will be added here-->
+    <!-- content block referenced in index.html will be added here-->
     {% block content %}{% endblock %}
-  </body>
+
+    <footer class="footer">
+        <p>&copy; Sockervaddsfabriken 2016</p>
+    </footer>
+</body>
 </html>

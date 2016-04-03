@@ -3,7 +3,7 @@ import json
 
 
 def populate_json_file():
-    data = {'key1': 'data1',
+    data = {'key1': 'value1',
             'key2':
                 [
                     1,

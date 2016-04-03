@@ -3,12 +3,11 @@ __author__ = 'elopptj'
 from math import factorial
 
 
-def factorial_count(number):
-    pass
 
 
 def main():
     list = range(100)
+
     [print(x) for x in list]
 
     pow_list = [x*x for x in list]

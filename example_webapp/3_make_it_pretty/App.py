@@ -1,7 +1,3 @@
-import os
-import sys
-sys.path.append(os.getcwd())
-
 from flask import Flask, render_template
 # app variable containing a Flask object
 app = Flask(__name__)

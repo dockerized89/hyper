@@ -42,6 +42,7 @@
 
         <div class="row marketing">
             <div class="col-lg-6">
+                <!-- List the created buckets -->
                 {% for bucket in buckets %}
                     <h4>{{ bucket.get_bucket()['author'] }} says:</h4>
                     <p><b>{{ bucket.get_bucket()['message'] }}</b></p>

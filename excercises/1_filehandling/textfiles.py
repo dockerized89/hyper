@@ -31,7 +31,7 @@ def main():
     print(first, second)
     file.close()
 
-    print()
+
 
     # This is the old style of reading the text file. Don't use this as it is a waste of resources.
 

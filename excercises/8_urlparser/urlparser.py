@@ -5,6 +5,9 @@ class URLParser(object):
     def __init__(self, url):
         self.url = url
         if '://' not in self.url:
+            # http -> protocol
+            # www.google.se -> host
+            # /search_for_something/ -> page
             self.protocol = ''
             self.host = url.split('/')[0]
             self.page = '/'.join(self.url.split('/')[1:])
@@ -14,7 +17,7 @@ class URLParser(object):
             self.page = '/'.join(self.url.split('/')[3:])
 
     def getProtocol(self):
-        return self.protocol
+        return self.host
 
 
     def getHost(self):
@@ -35,7 +38,7 @@ class URLParser(object):
 
 
 def main():
-    parser = URLParser('http://www.google.se')
+    parser = URLParser('http://www.google.se/search/me')
     print('Host: ', parser.getHost())
     print('Page: {0}'.format(parser.getPage()))
     print('Protocol:', parser.getProtocol())
