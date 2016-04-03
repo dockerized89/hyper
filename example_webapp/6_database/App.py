@@ -1,9 +1,3 @@
-import os
-import sys
-
-sys.path.append(os.getcwd())
-os.environ['PYTHONPATH'] += os.getcwd()
-
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from classes import Bucket
