@@ -8,8 +8,5 @@ app = Flask(__name__)
 def main():
     return "Hello World!"
 
-
-# Main method that is that one that is actually executed
-if __name__ == "__main__":
-    # Tell the app to start
-    app.run(debug=True)
+# Tell the app to start
+app.run(debug=True)
